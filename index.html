@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>monalika</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+	
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Welcome</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" >
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I am <span>Mona Chodavadiya</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Data Scientist ',
+						'Reseacher ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p>
+							<a href="https://github.com/monapatel0" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+			    <div class="col-md-12 heading-section text-center ftco-animate">
+					<h2 class="mb-4 custom-about-heading">About ME</h2>
+				</div>
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/Image4.jpeg" class="img-fluid rounded-circle b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Monalika Chodavadiya</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Backend Developer</span></p>
+										<p><span class="title-s">Experience: </span> <span>1 Years</span></p>
+										<p><span class="title-s">Address: </span> <span>Gujarat, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>Python</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>SQL</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Data analysis & Visualization</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Statistical Analysis</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Machine Learning</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+						
+								
+								<p>With 1 year of hands-on experience in backend development and a Master's degree in Data Science, I've delved deeply into real-time projects and gained a comprehensive understanding of advanced machine learning, deep learning, statistical analysis, and data visualization techniques. My academic background, combined with practical experience, has equipped me with a strong foundation in data analysis, hypothesis testing, and customer behavior analysis. I am adept at translating complex data into actionable insights and have a proven track record of leading impactful projects while providing effective mentorship.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span>      <span>Data Science &amp; Analytics</span></li>
+									<li class="d-flex"><span>Domain:</span>       <span>Retail, Ecommerce, Education &amp; Healthcare </span></li>
+									<li class="d-flex"><span>Language:</span>     <span>English, Hindi, Gujrati</span></li>
+									<li class="d-flex"><span>Tools:</span>        <span>Jupiter notebook, Colab, Oracle Apex, Microsoft Power BI,Ms Excel &amp; Tableau</span></li>
+									<li class="d-flex"><span>Skills:</span>          <span>Exploratory Data Analysis, Database management(ETL,Business Intelligence),Feature engineering, Data scarping, &amp; Research Paper </span>r</li>
+									
+										                                    
+
+									
+								</ul>
+							</div>
+						</div>
+								<p><a href="https://www.linkedin.com/in/mona-patel-306b95251/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	
+            <h2 class="mb-4">Resume</h2>
+            <p>Data Scientist with 1 years of experience driving business strategies through data-driven insights. Proven expertise in data science, statistical analysis, machine learning algorithms and Research paper.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2022-2023</span>
+						<h2>Data Scientist</h2>
+						<span class="position">Leeds Beckett University</span>
+						<p class="mt-4">
+							<ul>
+								<li>Conducted Alibaba Cluster Trace GPU 2020 project. Employed machine learning algorithms (linear
+									regression, multi-linear regression, K-Nearest Neighbors, random forest, decision tree). Utilized data
+									visualization, emphasizing Microsoft Excel for enhanced analysis.
+									</li>
+								<li>Executed ETL processed to extract, transform, and load student data enabling identification
+									of students’ pass records.</li>
+								<li>Gained hands-on experience with Oracle APEX, database design (logical, physical, and conceptual), and data
+									normalization.</li>
+								<li>Resolved cancellation and loss of business challenges using interactive project management techniques.
+										Leveraged customer relationship management, stakeholder engagement, Six Sigma, and visualization tools
+										to optimize operations. Achieved exceptional outcomes and elevated customer satisfaction as a result.</li>
+								<li>Developed an ethical support system for a university case study. Implemented Kimball's bottom-up
+									approach, creating a DataMart and dimensional model. Generated intuitive dashboards using Excel pivot
+									charts to enhance decision-making. Additionally, utilized MS Excel for query generation. </li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2018-2021</span>
+						<h2>Backend developer</h2>
+						<span class="position">Comrade Coders</span>
+						<p class="mt-4">
+							<ul>
+								<li>Managed and analyzed data efficiently, ensuring database optimization.</li>
+								<li>Proficient in Python, Excel, and MySQL for precise data processing.</li>
+								<li>Utilized data visualization techniques to present insights effectively.</li>
+								<li>Consistently met project deadlines with high-quality work.</li>
+								<li>Collaborated effectively with the team, offering valuable insights.</li>
+								<li>Adapted quickly to new challenges and demonstrated a strong learning ability.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2022-2023</span>
+    					<h2>MSC in Data Science</h2>
+    					<span class="position">Leeds Beckett University, Uk</span>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2018-2020</span>
+    					<h2>Bachelor of Computer Applications</h2>
+    					<span class="position">Sardar Patel University, India</span>
+    				</div>
+				</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+           
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are the sample Data Analytics projects on SQL, Python, Ms Excel & ML.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href= "https://github.com/monapatel0/ALIBABA-CLUSTER-TRACE-GPU-2022/tree/main" class="block-20 zoom-effect" style="background-image: url('images/image.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/monapatel0/ALIBABA-CLUSTER-TRACE-GPU-2022/tree/main"></a>Data analytics and Visulization : Alibaba Cluster Trace GPU 2020</h3>
+                <p>The research is to develop a "Sustainable and Smart System" for generating sustainability related policies with easier decision making policies with the application of "data science and visualization". </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/monapatel0/An-analysis-of-Diwali-sales-/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/monapatel0/An-analysis-of-Diwali-sales-/tree/main">Analysis of diwali sales</a></h3>
+                <p>Analysis of Diwali sales figures to enhance both customer satisfaction and sales performance using python.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/monapatel0/Sales-analysis" class="block-20 zoom-effect" style="background-image: url('images/image6.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/monapatel0/Sales-analysis">Sales analysis of Store</a></h3>
+                <p>The project is a Ms Excel dashboard designed to create an annual sales report for 2022, providing real-time progress and sales insights for the employees and owner of Vrinda Store.</p>
+              </div>
+            </div>
+          </div>
+<br>
+	<div class="col-md-4 d-flex ftco-animate">
+		<div class="blog-entry justify-content-end">
+		<a href="https://github.com/monapatel0/Data-warehouse-Data-Integration-ETL-and-maintenance" class="block-20 zoom-effect" style="background-image: url('images/image8.png');">
+		</a>
+		<div class="text mt-3 float-right d-block">
+
+		  <h3 class="heading"><a href="https://github.com/monapatel0/Data-warehouse-Data-Integration-ETL-and-maintenance">Data-warehouse-Data-Integration-ETL-and-maintenance</a></h3>
+		  </div>
+		</div>
+       </div>
+
+	   <div class="col-md-4 d-flex ftco-animate" style="margin-bottom: 20px;">
+		<div class="blog-entry justify-content-end">
+			<a href="https://github.com/monapatel0/Data-Science-project-" class="block-20 zoom-effect" style="background-image: url('images/image9.png');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+				<h3 class="heading"><a href="https://github.com/monapatel0/Data-Science-project-">Data Science project</a></h3>
+				<p>Machine learning, Research Paper, </p>
+			</div>
+		</div>
+	</div>
+	
+</div>
+</div>		
+</section>
+
+<section class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg);  margin-bottom: 20px;">
+		  <!-- <div class="container"> -->
+			  <div class="row justify-content-center">
+				  <div class="col-md-7 ftco-animate text-center">
+					  <div class="heading"> <h4> I love to solve business problems & uncover hidden data stories while also assisting you on your data science learning path. </h4>
+					  <br>
+					 
+					  </div>
+				  </div>
+			  </div>
+		  <!-- </div> -->
+	  </div>
+  </section>
+
+  <section id="contact-section">
+    <!-- Contact section content goes here -->
+     <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+           <div class="col-md-7 heading-section text-center ftco-animate">
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+        </div>
+    </div>
+
+    <div class="row justify-content-center"style="margin-top: 30px;"> <!-- Add margin-top here -->
+        <div class="col-md-7 ftco-animate text-center">
+            <p>Contact Number: <a href="tel:+0101010101">+44 7570308257</a></p>
+            <p>Email: <a href="mailto:contact@domainname.com">datascienceinsightshub@gmail.com</a></p>
+        </div>
+    </div>
+</div>
+
+
+
+
+          <div class="container">
+          <br>
+          <br>
+        <div class="row justify-content-center">
+        <div class="col-md-7 ftco-animate text-center">
+            <h2>Have a<span> Question?  </span> <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1E3a7DdyZhWYArn353A6-AmXs5QVmXDUwWpCbVFpkhjMIOQ/viewform?usp=sf_link" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+        </div>
+    </div>
+    <br>
+    <br>
+</div>
+
+</section>
+
+
+
+  
+  <footer class="ftco-footer ftco-section">
+	  <div class="container">
+		<div class="row">
+		  <div class="col-md-12 text-center">
+
+			<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+		  </div>
+		</div>
+	  </div>
+	</footer>
+
+
+<!-- loader -->
+<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/scrollax.min.js"></script>
+
+<script src="js/main.js"></script>
+  
+</body>
+</html>
+   
